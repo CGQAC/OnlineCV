@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.CSS">
+    <meta charset="utf-8">
+    <title>Chester Gardner QAC Consultant</title>
+  </head>
+  <body style="overflow-y:scroll">
+    <div id="container" >
+      <div>
+        <h1 id="titleOfPage"> Chester Gardner - Online CV </h1>
+      </div>
+
+      <script>
+        function clickCVItem(objID) {
+          document.getElementById("profile").setAttribute("class","");
+          document.getElementById("quals").setAttribute("class","");
+          document.getElementById("techskills").setAttribute("class","");
+          document.getElementById("github").setAttribute("class","");
+          document.getElementById("exp").setAttribute("class","");
+          document.getElementById("addinfo").setAttribute("class","");
+          document.getElementById("hobbies").setAttribute("class","");
+          document.getElementById("certificates").setAttribute("class","");
+
+          document.getElementById("home").style.display = "none";
+          document.getElementById("divprofile").style.display = "none";
+          document.getElementById("divquals").style.display = "none";
+          document.getElementById("divtechskills").style.display = "none";
+          document.getElementById("divgithub").style.display = "none";
+          document.getElementById("divexp").style.display = "none";
+          document.getElementById("divaddinfo").style.display = "none";
+          document.getElementById("divhobbies").style.display = "none";
+          document.getElementById("divcertificates").style.display = "none";
+
+          var obj = document.getElementById(objID)
+          obj.setAttribute("class", "active");
+          objID = "div" + objID;
+          document.getElementById(objID).style.display = "";
+        }
+      </script>
+      <div class="topnav">
+        <a id="profile" class="" onmouseup="clickCVItem('profile')">Profile</a>
+        <a id="quals" class="" onClick="clickCVItem('quals')">Qualifications</a>
+        <a id="techskills" class="" onmouseup="clickCVItem('techskills')">Technical Skills</a>
+        <a id="certificates" class="" onmouseup="clickCVItem('certificates')">Certificates</a>
+        <a id="github" class="" onmouseup="clickCVItem('github')">GitHub</a>
+        <a id="exp" class="" onmouseup="clickCVItem('exp')">Experience</a>
+        <a id="addinfo" class="" onmouseup="clickCVItem('addinfo')">Additional Information</a>
+        <a id="hobbies" class="" onmouseup="clickCVItem('hobbies')">Hobbies</a>
+      </div>
+      <div id="home">
+        <h2>Drop Page</h2>
+          <p>Please select a catagory from above, to learn more about me!</p>
+      </div>
+      <div id="divprofile" style="display:none">
+        <h2> Profile </h2>
+          <p>I am a hard-working, fast-learning, self-motivated enthusiast that thoroughly enjoys a challenge.  I have spent a lot of time studying new technologies and understanding them to the point where I can use them to deliver high quality work and reports within my respective fields. Very dedicated, I get a great sense of fulfilment from succeeding in the roles I work in.</p>
+          <p>I am very people-oriented and work very well in teams of all sizes, knowing that each cog is necessary to assure overall success. I build long lasting relationships, and am outgoing and friendly, easily approachable and patient.</p>
+          <p>I have also been a member of Mensa since a very young age.</p>
+      </div>
+      <div id="divquals" style="display:none">
+        <h2> Qualifications </h2>
+          <p>UiPath and Automation Anywhere certified developer (Robotic Process Automation)</p>
+          <p>BTEC National Diploma for IT Practitions</p>
+          <p>NVQ Level 2 Book Keeping and Accounts</p>
+      </div>
+      <div id="divtechskills" style="display:none">
+        <h2> Technical Skills </h2>
+        <p>Below is a list of technical skills that I am comfortable and confident in using.<br>As this list isn't exhaustive, it is worth noting that I have had exposure to numerous technologies and techniques that are not mentioned below, that also add to my knowledge and understanding of the technology domain.</p>
+        <div id="divcontainer">
+          <div id="tsLeft">
+            <table>
+              <tr>
+                <th>Technology Domain</th><th>Technologies and Tools</th>
+              </tr>
+              <tr>
+                <td class="tdTitle">Programming Languages</td><td>C, C++, Java, VBA, Python & Kivy, LUA/Corona, HTML, CSS</td>
+              </tr>
+              <tr>
+                <td class="tdTitle">IDE's</td><td>Eclipse, Android Studio, Unity, MonoDevelop, Atom, Sublime</td>
+              </tr>
+              <tr>
+                <td class="tdTitle">Operating Systems</td><td>Windows Server, Windows OS (95 to Win10), Unix, Linux Terminal CLI</td>
+              </tr>
+              <tr>
+                <td class="tdTitle">Database Technologies</td><td>Oracle SQL, SQLite</td>
+              </tr>
+              <tr>
+                <td class="tdTitle">Project Frameworks</td><td>Agile Scrum, Waterfall</td>
+              </tr>
+              <tr>
+                <td class="tdTitle">Other</td><td>LoadRunner (v9, 11 & 12), Performance Centre, Quality Centre, SharePoint, Web/HTTP, COM/DCOM, RTE Green Screens, Virtual Table Server, SoapUI, all Microsoft Office products, Microsoft Server/Hyper-V Manager, Amazon Web Services, Google Play Store and Social Network integration</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="tsRight">
+            <!-- <div class="codebox">
+                <code>
+                    var message = "hello world!";
+                    alert(message);
+                </code>¦
+            </div> -->
+            <div id="inputDiv">
+              <textarea id="inputDia" rows="10">list = ['Hello there!','Welcome to','my little','javascript','code box demo!','Use it as you please...',';)']
+list.forEach(a=>alert(a));</textarea>
+              <!-- var para = document.createElement("p");
+              var node = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+              para.appendChild(node);
+              alert(para.value); -->
+
+              <!-- list = ['Hello there!','Welcome to','my little','javascript','code box demo!','Use it as you please...',';)']
+              list.forEach(a=>alert(a)); -->
+            </div>
+            <div id="inputDiv">
+              <script>
+                function runCode() {
+                  let executeSpace = document.getElementById("outputArea");
+                  let newScript = document.createElement("script");
+                  newScript.type = "text/javascript";
+                  newScript.innerHTML = document.getElementById("inputDia").value;
+                  executeSpace.appendChild(newScript);
+                }
+              </script>
+              <input type="button" onClick="runCode()" value="Execute Code">
+              <p id="outputArea">outputArea</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="divcertificates" style="display:none">
+        <h2> Certificates </h2>
+        <h4> ISTQB </h4>
+          <object data="AQ37392021.pdf" width="50%" height="1000px"></object>
+      </div>
+
+
+
+      <div class="clear"></div>
+      <div id="divgithub" style="display:none">
+        <h2>GitHub</h2>
+          <a href="https://github.com/CGQAC">https://github.com/CGQAC</a>
+      </div>
+      <div id="divexp" style="display:none">
+        <h2> Experience </h2>
+          <h4>Lawrence and Wedlock</h4>
+            <h5>RPA Lead Developer</h5>
+              <p>I was hired by this new company as the lead developer of Robotic Process Automation technologies for a variety of clients, including LadBrokes Coral. My role was to design and develop automation scripts that reduce the amount of time staff spend on mundane tasks, whether they are daily, weekly or monthly jobs that need repeating. I was also there to aid the learning of one of the company directors to be competent at coding and use of the software, so that they were capable of completing contracts without the need to hire a contractor such as myself.</p>
+          <h4>Trust IV - Lloyds Banking Group</h4>
+            <h5>Performance Analyst and Consultant</h5>
+            <ul>
+              <li>Designed and executed non-functional testing scripts for various systems and vendor products used within Lloyds.</li>
+              <li>Designed high detailed walkthroughs for many applications and processes, some of which were complex systems and non-linear routes.</li>
+              <li>Provided technical observations and input to the remediation of environment faults and defects.</li>
+              <li>Created innovative solutions to streamline the process-burdened activities.</li>
+              <li>Had a large part in the development and production of a Resource Plan that incorporated service working rotas. I also developed a sub-tool to capture an individual’s ‘booking to’ time, for timesheet tracking and submissions to further streamline processes.</li>
+              <li>Successfully managed knowledge transfer of a large portion of the testing portfolio within a tight deadline, including five disparate platforms. This also included handing over the strenuous processes involved in day to day activities within the client.</li>
+            </ul>
+            <h5>Messaging Backbone</h5>
+              <ul>
+                <li>An Enterprise Service Bus that handles the communication between mutually interacting software applications focusing on speed.</li>
+                <li>As part of the handover process, the Standard Test Pack (STP) mentoring and tutoring was required.</li>
+                <li>The complexity of the STP ranged from script to script, including WEB/HTTP, COM/DCOM and RTE Screens.</li>
+                <li>The most difficult aspect was teaching the resources snippets of projects that were included within the test pack (as almost all data-activity within Lloyds required the ESB at some point or another), without divulging more information than necessary and losing sight of the handover plan timescales.</li>
+              </ul>
+            <h5>Data Integration Platform</h5>
+              <ul>
+                <li>The Data Integration Platform is a long-standing project spanning many years of development. Its primary purpose is to create a central, ‘golden’ record keeper that can be used for all services within the client pensions systems.</li>
+                <li>I was responsible for load testing the capabilities of the stored procedures by injecting XML queries at the ESB level proving that the performance of the database was sufficient enough for production.</li>
+                <li>I achieved this by using LoadRunner 9.5 (and in later releases, LoadRunner 11) which included Controller (injection) and Analysis.</li>
+                <li>The solution required custom reports included within the typical LoadRunner Report, using SharePoint and MS Excel so that the Data Base Analyst (DBA) was capable of doing some self-evaluation of the data for performance engineering/improvements.</li>
+                <li>The outcome of the project was the business made a no-go live decision, due to architectural issues causing poor performance and lengthy wait times.</li>
+                <li>My role in testing the project spanned 5 releases, involved defect management to resolution, and testing was always delivered on time and budget.</li>
+              </ul>
+            <h5>Pension Payment System</h5>
+              <ul>
+                <li>Corporate pensions payments focused on a front-end web interface that was used by scheme administrators to perform different functions such as adding new members, adding payments, record retrieval.</li>
+                <li>I was responsible for load testing core functions individually and in harmony using the LoadRunner suite of tools.  SharePoint was used to present technical findings.</li>
+                <li>The outcome of the project was a successful test which led to a green light go-live decision.</li>
+                <li>My role in testing the project spanned 1 release, involved defect management to resolution.</li>
+                <li>Whilst there were project issues relating to budget and timescales, the testing was ultimately delivered to the modified timescales and budget.</li>
+              </ul>
+            <h5>Managing Handover of Projects</h5>
+              <ul>
+                <li>I designed the structure of a handover plan to other service provider’s resources for all of my responsibilities in the test service.  The handover and Knowledge Transfer was executed in parallel to meeting the ongoing demands of delivery.</li>
+                <li>The plan was structured to tight timescales and there were significant inter-dependencies including the unpredictable nature of faults and defects found.</li>
+                <li>Detailed audit information was kept to ensure progress could be effectively tracked and monitored.</li>
+                <li>The handover was completed to time and budget whilst still maintaining a focus on the ongoing business as usual testing that remained.</li>
+              </ul>
+      </div>
+      <div id="divaddinfo" style="display:none">
+        <h2> Additional Information </h2>
+          <ul>
+            <li>Full, clean driving license</li>
+            <li>UK Passport</li>
+            <li>Carer for an older, handicapped brother</li>
+            <li>Care work for an autistic child, teaching him how to make mods for Minecraft</li>
+            <li>Released 16 4*+ applications on Google Play Store</li>
+          </ul>
+      </div>
+      <div id="divhobbies" style="display:none">
+        <h2> Hobbies/Interests </h2>
+        <p>I enjoy reading and writing short stories and poems – my circle of friends are very avid writers and we share out work with each other regularly. I find this to be very relaxing and a good method of escapism.</p>
+        <p>I spend a lot of my free time making applications and video games, getting a lot of satisfaction from seeing my products gaining downloads and good ratings.</p>
+      </div>
+    </div>
+  </body>
+</html>
